@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF1FD73C20880646006E0441 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1FD73B20880646006E0441 /* libcurl.a */; };
+		AF1FD74020881409006E0441 /* onedrive-proxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = AF1FD73F20881409006E0441 /* onedrive-proxy.mm */; };
+		AF1FD7482088E90E006E0441 /* MBProgressHUD+show.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1FD7462088E90E006E0441 /* MBProgressHUD+show.m */; };
+		AF1FD7492088E90E006E0441 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1FD7472088E90E006E0441 /* MBProgressHUD.m */; };
+		AF3CDF78209131220070C52D /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3CDF76209131220070C52D /* folder.png */; };
+		AF3CDF79209131220070C52D /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = AF3CDF77209131220070C52D /* file.png */; };
+		AF489791208D6BB9008DF574 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF489790208D6BB8008DF574 /* WebKit.framework */; };
+		AF6908C12088ECF800B20111 /* onedrive_auth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF6908BB2088ECF700B20111 /* onedrive_auth.cpp */; };
+		AF6908C22088ECF800B20111 /* onedrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF6908BC2088ECF700B20111 /* onedrive.cpp */; };
+		AF6908C32088ECF800B20111 /* cJSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF6908BD2088ECF800B20111 /* cJSON.cpp */; };
+		AF6908C42088ECF800B20111 /* curl_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF6908BF2088ECF800B20111 /* curl_base.cpp */; };
+		AFCA0E112086D5DC0096226D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCA0E102086D5DC0096226D /* AppDelegate.m */; };
+		AFCA0E142086D5DD0096226D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCA0E132086D5DD0096226D /* ViewController.m */; };
+		AFCA0E172086D5DD0096226D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA0E152086D5DD0096226D /* Main.storyboard */; };
+		AFCA0E192086D5DF0096226D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCA0E182086D5DF0096226D /* Assets.xcassets */; };
+		AFCA0E1C2086D5DF0096226D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA0E1A2086D5DF0096226D /* LaunchScreen.storyboard */; };
+		AFCA0E1F2086D5DF0096226D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCA0E1E2086D5DF0096226D /* main.m */; };
+		AFCA0E292086D5E00096226D /* OneDrive_xFsRedirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCA0E282086D5E00096226D /* OneDrive_xFsRedirTests.m */; };
+		AFCA0E342086D5E00096226D /* OneDrive_xFsRedirUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCA0E332086D5E00096226D /* OneDrive_xFsRedirUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFCA0E252086D5E00096226D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCA0E042086D5DC0096226D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCA0E0B2086D5DC0096226D;
+			remoteInfo = "OneDrive-xFsRedir";
+		};
+		AFCA0E302086D5E00096226D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCA0E042086D5DC0096226D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCA0E0B2086D5DC0096226D;
+			remoteInfo = "OneDrive-xFsRedir";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF1FD73B20880646006E0441 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "libcurl-ios-dist/lib/libcurl.a"; sourceTree = "<group>"; };
+		AF1FD73D2088124F006E0441 /* onedrive-proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "onedrive-proxy.h"; sourceTree = "<group>"; };
+		AF1FD73F20881409006E0441 /* onedrive-proxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "onedrive-proxy.mm"; sourceTree = "<group>"; };
+		AF1FD7442088E90E006E0441 /* MBProgressHUD+show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+show.h"; sourceTree = "<group>"; };
+		AF1FD7452088E90E006E0441 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		AF1FD7462088E90E006E0441 /* MBProgressHUD+show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+show.m"; sourceTree = "<group>"; };
+		AF1FD7472088E90E006E0441 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		AF3CDF76209131220070C52D /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		AF3CDF77209131220070C52D /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
+		AF489790208D6BB8008DF574 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AF6908BA2088ECF700B20111 /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cJSON.h; path = ../../src/cJSON.h; sourceTree = "<group>"; };
+		AF6908BB2088ECF700B20111 /* onedrive_auth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = onedrive_auth.cpp; path = ../../src/onedrive_auth.cpp; sourceTree = "<group>"; };
+		AF6908BC2088ECF700B20111 /* onedrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = onedrive.cpp; path = ../../src/onedrive.cpp; sourceTree = "<group>"; };
+		AF6908BD2088ECF800B20111 /* cJSON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cJSON.cpp; path = ../../src/cJSON.cpp; sourceTree = "<group>"; };
+		AF6908BE2088ECF800B20111 /* onedrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = onedrive.h; path = ../../src/onedrive.h; sourceTree = "<group>"; };
+		AF6908BF2088ECF800B20111 /* curl_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = curl_base.cpp; path = ../../src/curl_base.cpp; sourceTree = "<group>"; };
+		AF6908C02088ECF800B20111 /* curl_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = curl_base.h; path = ../../src/curl_base.h; sourceTree = "<group>"; };
+		AFCA0E0C2086D5DC0096226D /* OneDrive-xFsRedir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OneDrive-xFsRedir.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCA0E0F2086D5DC0096226D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AFCA0E102086D5DC0096226D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AFCA0E122086D5DC0096226D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AFCA0E132086D5DD0096226D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AFCA0E162086D5DD0096226D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFCA0E182086D5DF0096226D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFCA0E1B2086D5DF0096226D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFCA0E1D2086D5DF0096226D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCA0E1E2086D5DF0096226D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFCA0E242086D5E00096226D /* OneDrive-xFsRedirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OneDrive-xFsRedirTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCA0E282086D5E00096226D /* OneDrive_xFsRedirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneDrive_xFsRedirTests.m; sourceTree = "<group>"; };
+		AFCA0E2A2086D5E00096226D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCA0E2F2086D5E00096226D /* OneDrive-xFsRedirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OneDrive-xFsRedirUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCA0E332086D5E00096226D /* OneDrive_xFsRedirUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneDrive_xFsRedirUITests.m; sourceTree = "<group>"; };
+		AFCA0E352086D5E00096226D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFCA0E092086D5DC0096226D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF489791208D6BB9008DF574 /* WebKit.framework in Frameworks */,
+				AF1FD73C20880646006E0441 /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCA0E212086D5E00096226D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCA0E2C2086D5E00096226D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF1FD73A20880645006E0441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF489790208D6BB8008DF574 /* WebKit.framework */,
+				AF1FD73B20880646006E0441 /* libcurl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF6908B92088ECC000B20111 /* onedrive */ = {
+			isa = PBXGroup;
+			children = (
+				AF6908BD2088ECF800B20111 /* cJSON.cpp */,
+				AF6908BA2088ECF700B20111 /* cJSON.h */,
+				AF6908BF2088ECF800B20111 /* curl_base.cpp */,
+				AF6908C02088ECF800B20111 /* curl_base.h */,
+				AF6908BB2088ECF700B20111 /* onedrive_auth.cpp */,
+				AF6908BC2088ECF700B20111 /* onedrive.cpp */,
+				AF6908BE2088ECF800B20111 /* onedrive.h */,
+			);
+			name = onedrive;
+			sourceTree = "<group>";
+		};
+		AFCA0E032086D5DC0096226D = {
+			isa = PBXGroup;
+			children = (
+				AFCA0E0E2086D5DC0096226D /* OneDrive-xFsRedir */,
+				AFCA0E272086D5E00096226D /* OneDrive-xFsRedirTests */,
+				AFCA0E322086D5E00096226D /* OneDrive-xFsRedirUITests */,
+				AFCA0E0D2086D5DC0096226D /* Products */,
+				AF1FD73A20880645006E0441 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFCA0E0D2086D5DC0096226D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFCA0E0C2086D5DC0096226D /* OneDrive-xFsRedir.app */,
+				AFCA0E242086D5E00096226D /* OneDrive-xFsRedirTests.xctest */,
+				AFCA0E2F2086D5E00096226D /* OneDrive-xFsRedirUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFCA0E0E2086D5DC0096226D /* OneDrive-xFsRedir */ = {
+			isa = PBXGroup;
+			children = (
+				AF3CDF77209131220070C52D /* file.png */,
+				AF3CDF76209131220070C52D /* folder.png */,
+				AF6908B92088ECC000B20111 /* onedrive */,
+				AF1FD7452088E90E006E0441 /* MBProgressHUD.h */,
+				AF1FD7472088E90E006E0441 /* MBProgressHUD.m */,
+				AF1FD7442088E90E006E0441 /* MBProgressHUD+show.h */,
+				AF1FD7462088E90E006E0441 /* MBProgressHUD+show.m */,
+				AFCA0E0F2086D5DC0096226D /* AppDelegate.h */,
+				AFCA0E102086D5DC0096226D /* AppDelegate.m */,
+				AFCA0E122086D5DC0096226D /* ViewController.h */,
+				AFCA0E132086D5DD0096226D /* ViewController.m */,
+				AFCA0E152086D5DD0096226D /* Main.storyboard */,
+				AFCA0E182086D5DF0096226D /* Assets.xcassets */,
+				AFCA0E1A2086D5DF0096226D /* LaunchScreen.storyboard */,
+				AFCA0E1D2086D5DF0096226D /* Info.plist */,
+				AFCA0E1E2086D5DF0096226D /* main.m */,
+				AF1FD73F20881409006E0441 /* onedrive-proxy.mm */,
+				AF1FD73D2088124F006E0441 /* onedrive-proxy.h */,
+			);
+			path = "OneDrive-xFsRedir";
+			sourceTree = "<group>";
+		};
+		AFCA0E272086D5E00096226D /* OneDrive-xFsRedirTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFCA0E282086D5E00096226D /* OneDrive_xFsRedirTests.m */,
+				AFCA0E2A2086D5E00096226D /* Info.plist */,
+			);
+			path = "OneDrive-xFsRedirTests";
+			sourceTree = "<group>";
+		};
+		AFCA0E322086D5E00096226D /* OneDrive-xFsRedirUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFCA0E332086D5E00096226D /* OneDrive_xFsRedirUITests.m */,
+				AFCA0E352086D5E00096226D /* Info.plist */,
+			);
+			path = "OneDrive-xFsRedirUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFCA0E0B2086D5DC0096226D /* OneDrive-xFsRedir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCA0E382086D5E00096226D /* Build configuration list for PBXNativeTarget "OneDrive-xFsRedir" */;
+			buildPhases = (
+				AFCA0E082086D5DC0096226D /* Sources */,
+				AFCA0E092086D5DC0096226D /* Frameworks */,
+				AFCA0E0A2086D5DC0096226D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OneDrive-xFsRedir";
+			productName = "OneDrive-xFsRedir";
+			productReference = AFCA0E0C2086D5DC0096226D /* OneDrive-xFsRedir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFCA0E232086D5E00096226D /* OneDrive-xFsRedirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCA0E3B2086D5E00096226D /* Build configuration list for PBXNativeTarget "OneDrive-xFsRedirTests" */;
+			buildPhases = (
+				AFCA0E202086D5E00096226D /* Sources */,
+				AFCA0E212086D5E00096226D /* Frameworks */,
+				AFCA0E222086D5E00096226D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCA0E262086D5E00096226D /* PBXTargetDependency */,
+			);
+			name = "OneDrive-xFsRedirTests";
+			productName = "OneDrive-xFsRedirTests";
+			productReference = AFCA0E242086D5E00096226D /* OneDrive-xFsRedirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFCA0E2E2086D5E00096226D /* OneDrive-xFsRedirUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCA0E3E2086D5E00096226D /* Build configuration list for PBXNativeTarget "OneDrive-xFsRedirUITests" */;
+			buildPhases = (
+				AFCA0E2B2086D5E00096226D /* Sources */,
+				AFCA0E2C2086D5E00096226D /* Frameworks */,
+				AFCA0E2D2086D5E00096226D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCA0E312086D5E00096226D /* PBXTargetDependency */,
+			);
+			name = "OneDrive-xFsRedirUITests";
+			productName = "OneDrive-xFsRedirUITests";
+			productReference = AFCA0E2F2086D5E00096226D /* OneDrive-xFsRedirUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFCA0E042086D5DC0096226D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = fanxiushu;
+				TargetAttributes = {
+					AFCA0E0B2086D5DC0096226D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					AFCA0E232086D5E00096226D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = AFCA0E0B2086D5DC0096226D;
+					};
+					AFCA0E2E2086D5E00096226D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = AFCA0E0B2086D5DC0096226D;
+					};
+				};
+			};
+			buildConfigurationList = AFCA0E072086D5DC0096226D /* Build configuration list for PBXProject "OneDrive-xFsRedir" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFCA0E032086D5DC0096226D;
+			productRefGroup = AFCA0E0D2086D5DC0096226D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFCA0E0B2086D5DC0096226D /* OneDrive-xFsRedir */,
+				AFCA0E232086D5E00096226D /* OneDrive-xFsRedirTests */,
+				AFCA0E2E2086D5E00096226D /* OneDrive-xFsRedirUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFCA0E0A2086D5DC0096226D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCA0E1C2086D5DF0096226D /* LaunchScreen.storyboard in Resources */,
+				AF3CDF79209131220070C52D /* file.png in Resources */,
+				AF3CDF78209131220070C52D /* folder.png in Resources */,
+				AFCA0E192086D5DF0096226D /* Assets.xcassets in Resources */,
+				AFCA0E172086D5DD0096226D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCA0E222086D5E00096226D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCA0E2D2086D5E00096226D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFCA0E082086D5DC0096226D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCA0E142086D5DD0096226D /* ViewController.m in Sources */,
+				AF6908C22088ECF800B20111 /* onedrive.cpp in Sources */,
+				AF1FD74020881409006E0441 /* onedrive-proxy.mm in Sources */,
+				AFCA0E1F2086D5DF0096226D /* main.m in Sources */,
+				AFCA0E112086D5DC0096226D /* AppDelegate.m in Sources */,
+				AF1FD7492088E90E006E0441 /* MBProgressHUD.m in Sources */,
+				AF6908C42088ECF800B20111 /* curl_base.cpp in Sources */,
+				AF6908C12088ECF800B20111 /* onedrive_auth.cpp in Sources */,
+				AF6908C32088ECF800B20111 /* cJSON.cpp in Sources */,
+				AF1FD7482088E90E006E0441 /* MBProgressHUD+show.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCA0E202086D5E00096226D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCA0E292086D5E00096226D /* OneDrive_xFsRedirTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCA0E2B2086D5E00096226D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCA0E342086D5E00096226D /* OneDrive_xFsRedirUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFCA0E262086D5E00096226D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCA0E0B2086D5DC0096226D /* OneDrive-xFsRedir */;
+			targetProxy = AFCA0E252086D5E00096226D /* PBXContainerItemProxy */;
+		};
+		AFCA0E312086D5E00096226D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCA0E0B2086D5DC0096226D /* OneDrive-xFsRedir */;
+			targetProxy = AFCA0E302086D5E00096226D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFCA0E152086D5DD0096226D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFCA0E162086D5DD0096226D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFCA0E1A2086D5DF0096226D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFCA0E1B2086D5DF0096226D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFCA0E362086D5E00096226D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AFCA0E372086D5E00096226D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFCA0E392086D5E00096226D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 438VVLHPVA;
+				INFOPLIST_FILE = "OneDrive-xFsRedir/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libcurl-ios-dist/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fxs.OneDrive-xFsRedir";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFCA0E3A2086D5E00096226D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 438VVLHPVA;
+				INFOPLIST_FILE = "OneDrive-xFsRedir/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libcurl-ios-dist/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fxs.OneDrive-xFsRedir";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFCA0E3C2086D5E00096226D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 438VVLHPVA;
+				INFOPLIST_FILE = "OneDrive-xFsRedirTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fxs.OneDrive-xFsRedirTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneDrive-xFsRedir.app/OneDrive-xFsRedir";
+			};
+			name = Debug;
+		};
+		AFCA0E3D2086D5E00096226D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 438VVLHPVA;
+				INFOPLIST_FILE = "OneDrive-xFsRedirTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fxs.OneDrive-xFsRedirTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneDrive-xFsRedir.app/OneDrive-xFsRedir";
+			};
+			name = Release;
+		};
+		AFCA0E3F2086D5E00096226D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 438VVLHPVA;
+				INFOPLIST_FILE = "OneDrive-xFsRedirUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fxs.OneDrive-xFsRedirUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OneDrive-xFsRedir";
+			};
+			name = Debug;
+		};
+		AFCA0E402086D5E00096226D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 438VVLHPVA;
+				INFOPLIST_FILE = "OneDrive-xFsRedirUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fxs.OneDrive-xFsRedirUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OneDrive-xFsRedir";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFCA0E072086D5DC0096226D /* Build configuration list for PBXProject "OneDrive-xFsRedir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCA0E362086D5E00096226D /* Debug */,
+				AFCA0E372086D5E00096226D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCA0E382086D5E00096226D /* Build configuration list for PBXNativeTarget "OneDrive-xFsRedir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCA0E392086D5E00096226D /* Debug */,
+				AFCA0E3A2086D5E00096226D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCA0E3B2086D5E00096226D /* Build configuration list for PBXNativeTarget "OneDrive-xFsRedirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCA0E3C2086D5E00096226D /* Debug */,
+				AFCA0E3D2086D5E00096226D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCA0E3E2086D5E00096226D /* Build configuration list for PBXNativeTarget "OneDrive-xFsRedirUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCA0E3F2086D5E00096226D /* Debug */,
+				AFCA0E402086D5E00096226D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFCA0E042086D5DC0096226D /* Project object */;
+}
